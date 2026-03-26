@@ -1,6 +1,4 @@
-
 <!DOCTYPE html>
-
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -21,42 +19,42 @@ body{background:var(--bg);color:var(--text);font-family:'IBM Plex Mono',monospac
 .app{display:flex;flex-direction:column;height:100vh;}
 
 /* HEADER */
-.header{background:var(–surface);border-bottom:1px solid var(–border);padding:0 28px;display:flex;align-items:stretch;flex-shrink:0;}
-.header-brand{display:flex;align-items:center;gap:12px;padding:16px 28px 16px 0;border-right:1px solid var(–border);}
-.header-brand h1{font-family:‘Noto Serif JP’,serif;font-weight:900;font-size:1.15rem;letter-spacing:0.12em;white-space:nowrap;}
-.brand-dot{width:8px;height:8px;background:var(–rust);border-radius:50%;flex-shrink:0;}
+.header{background:var(--surface);border-bottom:1px solid var(--border);padding:0 28px;display:flex;align-items:stretch;flex-shrink:0;}
+.header-brand{display:flex;align-items:center;gap:12px;padding:16px 28px 16px 0;border-right:1px solid var(--border);}
+.header-brand h1{font-family:'Noto Serif JP',serif;font-weight:900;font-size:1.15rem;letter-spacing:0.12em;white-space:nowrap;}
+.brand-dot{width:8px;height:8px;background:var(--rust);border-radius:50%;flex-shrink:0;}
 .nav-tabs{display:flex;align-items:stretch;padding:0 20px;flex:1;}
-.nav-tab{font-family:‘IBM Plex Mono’,monospace;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;padding:0 20px;border:none;background:transparent;color:var(–text3);cursor:pointer;border-bottom:2px solid transparent;transition:all 0.15s;display:flex;align-items:center;gap:6px;}
-.nav-tab:hover{color:var(–text2);}
-.nav-tab.active{color:var(–text);border-bottom-color:var(–rust);}
-.tab-count{background:var(–surface3);color:var(–text2);font-size:0.6rem;padding:1px 6px;border-radius:10px;}
-.nav-tab.active .tab-count{background:var(–rust);color:white;}
-.header-right{display:flex;align-items:center;gap:16px;padding-left:20px;border-left:1px solid var(–border);margin-left:auto;}
+.nav-tab{font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;padding:0 20px;border:none;background:transparent;color:var(--text3);cursor:pointer;border-bottom:2px solid transparent;transition:all 0.15s;display:flex;align-items:center;gap:6px;}
+.nav-tab:hover{color:var(--text2);}
+.nav-tab.active{color:var(--text);border-bottom-color:var(--rust);}
+.tab-count{background:var(--surface3);color:var(--text2);font-size:0.6rem;padding:1px 6px;border-radius:10px;}
+.nav-tab.active .tab-count{background:var(--rust);color:white;}
+.header-right{display:flex;align-items:center;gap:16px;padding-left:20px;border-left:1px solid var(--border);margin-left:auto;}
 .stat-pill{display:flex;flex-direction:column;align-items:flex-end;}
-.stat-pill-label{font-size:0.55rem;color:var(–text3);letter-spacing:0.12em;text-transform:uppercase;}
+.stat-pill-label{font-size:0.55rem;color:var(--text3);letter-spacing:0.12em;text-transform:uppercase;}
 .stat-pill-value{font-size:0.9rem;font-weight:500;}
-.stat-pill-value.green{color:var(–sage2);}
-.stat-pill-value.amber{color:var(–gold2);}
-.stat-pill-value.red{color:var(–rust2);}
-.sync-status{font-size:0.58rem;padding:4px 10px;border:1px solid var(–border);color:var(–text3);letter-spacing:0.06em;cursor:pointer;transition:all 0.15s;}
-.sync-status:hover{border-color:var(–border2);color:var(–text2);}
-.sync-status.syncing{color:var(–gold2);border-color:var(–gold);}
-.sync-status.ok{color:var(–sage2);border-color:var(–sage);}
-.sync-status.err{color:var(–rust2);border-color:var(–rust);}
+.stat-pill-value.green{color:var(--sage2);}
+.stat-pill-value.amber{color:var(--gold2);}
+.stat-pill-value.red{color:var(--rust2);}
+.sync-status{font-size:0.58rem;padding:4px 10px;border:1px solid var(--border);color:var(--text3);letter-spacing:0.06em;cursor:pointer;transition:all 0.15s;}
+.sync-status:hover{border-color:var(--border2);color:var(--text2);}
+.sync-status.syncing{color:var(--gold2);border-color:var(--gold);}
+.sync-status.ok{color:var(--sage2);border-color:var(--sage);}
+.sync-status.err{color:var(--rust2);border-color:var(--rust);}
 
 /* TOOLBAR */
-.toolbar{background:var(–surface);border-bottom:1px solid var(–border);padding:10px 28px;display:flex;gap:10px;align-items:center;flex-shrink:0;}
-.btn{font-family:‘IBM Plex Mono’,monospace;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;padding:7px 16px;border:1px solid var(–border2);background:transparent;color:var(–text2);cursor:pointer;transition:all 0.15s;}
-.btn:hover{background:var(–surface3);color:var(–text);}
+.toolbar{background:var(--surface);border-bottom:1px solid var(--border);padding:10px 28px;display:flex;gap:10px;align-items:center;flex-shrink:0;}
+.btn{font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;padding:7px 16px;border:1px solid var(--border2);background:transparent;color:var(--text2);cursor:pointer;transition:all 0.15s;}
+.btn:hover{background:var(--surface3);color:var(--text);}
 .btn:disabled{opacity:0.4;cursor:not-allowed;}
-.btn-primary{background:var(–rust);color:white;border-color:var(–rust);}
-.btn-primary:hover{background:var(–rust2);border-color:var(–rust2);color:white;}
+.btn-primary{background:var(--rust);color:white;border-color:var(--rust);}
+.btn-primary:hover{background:var(--rust2);border-color:var(--rust2);color:white;}
 .btn-sm{padding:5px 10px;font-size:0.62rem;}
 .filter-group{margin-left:auto;display:flex;gap:6px;align-items:center;}
-.filter-label{font-size:0.6rem;color:var(–text3);letter-spacing:0.1em;text-transform:uppercase;}
-.filter-btn{font-family:‘IBM Plex Mono’,monospace;font-size:0.62rem;padding:5px 12px;border:1px solid var(–border);background:transparent;color:var(–text3);cursor:pointer;letter-spacing:0.08em;transition:all 0.15s;}
-.filter-btn.active{background:var(–surface3);color:var(–text);border-color:var(–border2);}
-.filter-select{font-family:‘IBM Plex Mono’,monospace;font-size:0.62rem;padding:5px 10px;border:1px solid var(–border);background:var(–surface);color:var(–text2);cursor:pointer;outline:none;}
+.filter-label{font-size:0.6rem;color:var(--text3);letter-spacing:0.1em;text-transform:uppercase;}
+.filter-btn{font-family:'IBM Plex Mono',monospace;font-size:0.62rem;padding:5px 12px;border:1px solid var(--border);background:transparent;color:var(--text3);cursor:pointer;letter-spacing:0.08em;transition:all 0.15s;}
+.filter-btn.active{background:var(--surface3);color:var(--text);border-color:var(--border2);}
+.filter-select{font-family:'IBM Plex Mono',monospace;font-size:0.62rem;padding:5px 10px;border:1px solid var(--border);background:var(--surface);color:var(--text2);cursor:pointer;outline:none;}
 
 /* MAIN */
 .main-content{flex:1;overflow-y:auto;}
@@ -66,186 +64,185 @@ body{background:var(--bg);color:var(--text);font-family:'IBM Plex Mono',monospac
 .items-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;}
 
 /* CARD */
-.item-card{background:var(–surface);border:1px solid var(–border);overflow:hidden;transition:transform 0.15s,box-shadow 0.15s,border-color 0.15s;}
-.item-card:hover{border-color:var(–border2);box-shadow:0 4px 20px rgba(0,0,0,0.4);transform:translateY(-2px);}
+.item-card{background:var(--surface);border:1px solid var(--border);overflow:hidden;transition:transform 0.15s,box-shadow 0.15s,border-color 0.15s;}
+.item-card:hover{border-color:var(--border2);box-shadow:0 4px 20px rgba(0,0,0,0.4);transform:translateY(-2px);}
 .item-card.fully-sold{opacity:0.6;}
 .item-card.fully-sold:hover{transform:none;box-shadow:none;}
-.card-img{width:100%;aspect-ratio:3/4;background:var(–surface2);position:relative;overflow:hidden;}
+.card-img{width:100%;aspect-ratio:3/4;background:var(--surface2);position:relative;overflow:hidden;}
 .card-img img{width:100%;height:100%;object-fit:cover;display:block;}
-.img-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(–text3);font-size:0.6rem;letter-spacing:0.1em;cursor:pointer;transition:background 0.15s;}
-.img-placeholder:hover{background:var(–surface3);}
+.img-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--text3);font-size:0.6rem;letter-spacing:0.1em;cursor:pointer;transition:background 0.15s;}
+.img-placeholder:hover{background:var(--surface3);}
 .img-placeholder svg{width:28px;height:28px;opacity:0.3;}
 .sold-stamp-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.65);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.2s;}
 .item-card.fully-sold .sold-stamp-overlay{opacity:1;}
-.sold-stamp-text{font-family:‘Noto Serif JP’,serif;font-size:2rem;font-weight:900;color:var(–rust);border:3px solid var(–rust);padding:4px 14px;transform:rotate(-10deg);letter-spacing:0.1em;}
+.sold-stamp-text{font-family:'Noto Serif JP',serif;font-size:2rem;font-weight:900;color:var(--rust);border:3px solid var(--rust);padding:4px 14px;transform:rotate(-10deg);letter-spacing:0.1em;}
 .card-body{padding:12px 14px;}
 .card-header-row{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;}
-.card-id{font-size:0.55rem;color:var(–text3);letter-spacing:0.15em;}
-.card-name{font-family:‘Noto Serif JP’,serif;font-size:0.95rem;font-weight:600;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.card-price{font-size:0.95rem;color:var(–rust2);font-weight:500;}
-.card-category-size{font-size:0.6rem;color:var(–text3);letter-spacing:0.08em;margin-bottom:8px;}
+.card-id{font-size:0.55rem;color:var(--text3);letter-spacing:0.15em;}
+.card-name{font-family:'Noto Serif JP',serif;font-size:0.95rem;font-weight:600;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.card-price{font-size:0.95rem;color:var(--rust2);font-weight:500;}
+.card-category-size{font-size:0.6rem;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;}
 .variant-list{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px;}
-.variant-chip{font-size:0.58rem;letter-spacing:0.06em;padding:2px 7px;border:1px solid var(–border2);color:var(–text2);display:flex;align-items:center;gap:4px;}
-.variant-chip.zero{border-color:var(–rust);color:var(–rust);opacity:0.5;text-decoration:line-through;}
-.variant-chip.low{border-color:var(–gold);color:var(–gold2);}
-.variant-chip .color-dot{width:8px;height:8px;border-radius:50%;border:1px solid var(–border2);flex-shrink:0;}
+.variant-chip{font-size:0.58rem;letter-spacing:0.06em;padding:2px 7px;border:1px solid var(--border2);color:var(--text2);display:flex;align-items:center;gap:4px;}
+.variant-chip.zero{border-color:var(--rust);color:var(--rust);opacity:0.5;text-decoration:line-through;}
+.variant-chip.low{border-color:var(--gold);color:var(--gold2);}
+.variant-chip .color-dot{width:8px;height:8px;border-radius:50%;border:1px solid var(--border2);flex-shrink:0;}
 .card-stores{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:8px;}
-.card-store-tag{font-size:0.55rem;padding:1px 6px;background:var(–surface3);color:var(–text3);border:1px solid var(–border);letter-spacing:0.06em;}
-.card-dates{font-size:0.58rem;color:var(–text3);letter-spacing:0.05em;}
+.card-store-tag{font-size:0.55rem;padding:1px 6px;background:var(--surface3);color:var(--text3);border:1px solid var(--border);letter-spacing:0.06em;}
+.card-dates{font-size:0.58rem;color:var(--text3);letter-spacing:0.05em;}
 .card-dates span{display:block;}
-.sold-date-text{color:var(–rust)!important;}
-.card-actions{padding:8px 14px;border-top:1px solid var(–border);display:flex;gap:6px;}
-.act-btn{font-family:‘IBM Plex Mono’,monospace;font-size:0.58rem;padding:5px 8px;border:1px solid var(–border);background:transparent;color:var(–text3);cursor:pointer;letter-spacing:0.06em;transition:all 0.15s;flex:1;}
-.act-btn:hover{background:var(–surface3);color:var(–text);border-color:var(–border2);}
-.act-btn.sell{border-color:var(–sage);color:var(–sage);}
-.act-btn.sell:hover{background:var(–sage);color:white;}
-.act-btn.unsell{border-color:var(–text3);color:var(–text3);}
-.act-btn.del{border-color:var(–rust);color:var(–rust);flex:none;padding:5px 7px;}
-.act-btn.del:hover{background:var(–rust);color:white;}
+.sold-date-text{color:var(--rust)!important;}
+.card-actions{padding:8px 14px;border-top:1px solid var(--border);display:flex;gap:6px;}
+.act-btn{font-family:'IBM Plex Mono',monospace;font-size:0.58rem;padding:5px 8px;border:1px solid var(--border);background:transparent;color:var(--text3);cursor:pointer;letter-spacing:0.06em;transition:all 0.15s;flex:1;}
+.act-btn:hover{background:var(--surface3);color:var(--text);border-color:var(--border2);}
+.act-btn.sell{border-color:var(--sage);color:var(--sage);}
+.act-btn.sell:hover{background:var(--sage);color:white;}
+.act-btn.unsell{border-color:var(--text3);color:var(--text3);}
+.act-btn.del{border-color:var(--rust);color:var(--rust);flex:none;padding:5px 7px;}
+.act-btn.del:hover{background:var(--rust);color:white;}
 
 /* ANALYTICS */
 .analytics-wrap{padding:24px 28px;}
-.analytics-title{font-family:‘Noto Serif JP’,serif;font-size:1.1rem;font-weight:600;margin-bottom:4px;}
-.analytics-sub{font-size:0.65rem;color:var(–text3);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:20px;}
+.analytics-title{font-family:'Noto Serif JP',serif;font-size:1.1rem;font-weight:600;margin-bottom:4px;}
+.analytics-sub{font-size:0.65rem;color:var(--text3);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:20px;}
 .summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:28px;}
-.summary-card{background:var(–surface);border:1px solid var(–border);padding:16px 20px;}
-.summary-card-label{font-size:0.6rem;color:var(–text3);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:6px;}
+.summary-card{background:var(--surface);border:1px solid var(--border);padding:16px 20px;}
+.summary-card-label{font-size:0.6rem;color:var(--text3);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:6px;}
 .summary-card-value{font-size:1.6rem;font-weight:500;}
-.summary-card-value.green{color:var(–sage2);}
-.summary-card-value.amber{color:var(–gold2);}
-.summary-card-value.red{color:var(–rust2);}
-.summary-card-value.blue{color:var(–blue2);}
-.summary-card-sub{font-size:0.6rem;color:var(–text3);margin-top:4px;}
-.section-title{font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(–text3);border-bottom:1px solid var(–border);padding-bottom:8px;margin-bottom:14px;}
+.summary-card-value.green{color:var(--sage2);}
+.summary-card-value.amber{color:var(--gold2);}
+.summary-card-value.red{color:var(--rust2);}
+.summary-card-value.blue{color:var(--blue2);}
+.summary-card-sub{font-size:0.6rem;color:var(--text3);margin-top:4px;}
+.section-title{font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--text3);border-bottom:1px solid var(--border);padding-bottom:8px;margin-bottom:14px;}
 .analytics-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:28px;}
-.analytics-block{background:var(–surface);border:1px solid var(–border);padding:18px 20px;}
+.analytics-block{background:var(--surface);border:1px solid var(--border);padding:18px 20px;}
 .data-table{width:100%;border-collapse:collapse;}
-.data-table th{font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;color:var(–text3);padding:6px 10px;border-bottom:1px solid var(–border);text-align:left;font-weight:400;}
-.data-table td{font-size:0.72rem;padding:8px 10px;border-bottom:1px solid var(–border);color:var(–text2);}
+.data-table th{font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);padding:6px 10px;border-bottom:1px solid var(--border);text-align:left;font-weight:400;}
+.data-table td{font-size:0.72rem;padding:8px 10px;border-bottom:1px solid var(--border);color:var(--text2);}
 .data-table tr:last-child td{border-bottom:none;}
-.data-table tr:hover td{background:var(–surface2);}
+.data-table tr:hover td{background:var(--surface2);}
 .td-num{text-align:right!important;font-variant-numeric:tabular-nums;}
-.td-store{font-weight:500;color:var(–text);}
-.td-in{color:var(–sage2);}
-.td-sold{color:var(–rust2);}
-.td-stock{color:var(–gold2);}
+.td-store{font-weight:500;color:var(--text);}
+.td-in{color:var(--sage2);}
+.td-sold{color:var(--rust2);}
+.td-stock{color:var(--gold2);}
 .bar-chart{display:flex;flex-direction:column;gap:10px;}
 .bar-row{display:flex;align-items:center;gap:10px;}
-.bar-label{font-size:0.62rem;color:var(–text2);width:80px;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.bar-track{flex:1;height:14px;background:var(–surface2);position:relative;border:1px solid var(–border);}
+.bar-label{font-size:0.62rem;color:var(--text2);width:80px;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.bar-track{flex:1;height:14px;background:var(--surface2);position:relative;border:1px solid var(--border);}
 .bar-fill{height:100%;transition:width 0.4s ease;}
-.bar-fill.in{background:var(–sage);}
-.bar-fill.sold-bar{background:var(–rust);}
-.bar-count{font-size:0.6rem;color:var(–text3);width:28px;text-align:right;}
+.bar-fill.in{background:var(--sage);}
+.bar-fill.sold-bar{background:var(--rust);}
+.bar-count{font-size:0.6rem;color:var(--text3);width:28px;text-align:right;}
 
 /* MODAL */
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:100;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.2s;}
 .modal-overlay.open{opacity:1;pointer-events:all;}
-.modal{background:var(–surface);border:1px solid var(–border2);width:520px;max-width:95vw;max-height:92vh;overflow-y:auto;transform:translateY(12px);transition:transform 0.2s;}
+.modal{background:var(--surface);border:1px solid var(--border2);width:520px;max-width:95vw;max-height:92vh;overflow-y:auto;transform:translateY(12px);transition:transform 0.2s;}
 .modal-overlay.open .modal{transform:translateY(0);}
-.modal-head{background:var(–surface2);padding:16px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(–border);position:sticky;top:0;z-index:1;}
-.modal-head h2{font-family:‘Noto Serif JP’,serif;font-size:0.95rem;font-weight:600;}
-.modal-close{background:none;border:none;color:var(–text3);font-size:1.2rem;cursor:pointer;line-height:1;}
-.modal-close:hover{color:var(–text);}
+.modal-head{background:var(--surface2);padding:16px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:1;}
+.modal-head h2{font-family:'Noto Serif JP',serif;font-size:0.95rem;font-weight:600;}
+.modal-close{background:none;border:none;color:var(--text3);font-size:1.2rem;cursor:pointer;line-height:1;}
+.modal-close:hover{color:var(--text);}
 .modal-body{padding:20px;}
-.modal-foot{padding:14px 20px;border-top:1px solid var(–border);display:flex;gap:8px;justify-content:flex-end;}
+.modal-foot{padding:14px 20px;border-top:1px solid var(--border);display:flex;gap:8px;justify-content:flex-end;}
 .form-group{margin-bottom:14px;}
-.form-label{font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(–text3);display:block;margin-bottom:5px;}
-.form-input,.form-select{width:100%;font-family:‘IBM Plex Mono’,monospace;font-size:0.8rem;padding:8px 10px;border:1px solid var(–border2);background:var(–surface2);color:var(–text);outline:none;transition:border-color 0.15s;}
-.form-input:focus,.form-select:focus{border-color:var(–rust);}
+.form-label{font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);display:block;margin-bottom:5px;}
+.form-input,.form-select{width:100%;font-family:'IBM Plex Mono',monospace;font-size:0.8rem;padding:8px 10px;border:1px solid var(--border2);background:var(--surface2);color:var(--text);outline:none;transition:border-color 0.15s;}
+.form-input:focus,.form-select:focus{border-color:var(--rust);}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 
 /* IMAGE */
-.img-upload-area{border:1.5px dashed var(–border2);padding:20px;text-align:center;cursor:pointer;transition:all 0.15s;background:var(–surface2);}
-.img-upload-area:hover{border-color:var(–rust);}
-#img-preview{width:100%;max-height:180px;object-fit:cover;display:none;border:1px solid var(–border);}
-#img-upload-hint{font-size:0.65rem;color:var(–text3);letter-spacing:0.08em;}
+.img-upload-area{border:1.5px dashed var(--border2);padding:20px;text-align:center;cursor:pointer;transition:all 0.15s;background:var(--surface2);}
+.img-upload-area:hover{border-color:var(--rust);}
+#img-preview{width:100%;max-height:180px;object-fit:cover;display:none;border:1px solid var(--border);}
+#img-upload-hint{font-size:0.65rem;color:var(--text3);letter-spacing:0.08em;}
 
 /* VARIANT MANAGER */
-.variant-manager{border:1px solid var(–border);background:var(–surface2);}
-.variant-manager-head{padding:8px 12px;border-bottom:1px solid var(–border);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(–text3);display:flex;justify-content:space-between;}
-.variant-col-labels{display:grid;grid-template-columns:1fr 1fr 60px 1fr 28px;gap:6px;padding:6px 8px 0;font-size:0.55rem;color:var(–text3);letter-spacing:0.1em;text-transform:uppercase;}
+.variant-manager{border:1px solid var(--border);background:var(--surface2);}
+.variant-manager-head{padding:8px 12px;border-bottom:1px solid var(--border);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);display:flex;justify-content:space-between;}
+.variant-col-labels{display:grid;grid-template-columns:1fr 1fr 60px 1fr 28px;gap:6px;padding:6px 8px 0;font-size:0.55rem;color:var(--text3);letter-spacing:0.1em;text-transform:uppercase;}
 .variant-rows{padding:8px;display:flex;flex-direction:column;gap:6px;}
 .variant-row{display:grid;grid-template-columns:1fr 1fr 60px 1fr 28px;gap:6px;align-items:center;}
-.variant-row input,.variant-row select{font-family:‘IBM Plex Mono’,monospace;font-size:0.72rem;padding:5px 8px;border:1px solid var(–border);background:var(–surface);color:var(–text);outline:none;}
-.variant-row input:focus,.variant-row select:focus{border-color:var(–rust);}
-.del-row-btn{background:none;border:1px solid var(–border);color:var(–text3);cursor:pointer;font-size:0.7rem;padding:4px;transition:all 0.15s;text-align:center;}
-.del-row-btn:hover{background:var(–rust);border-color:var(–rust);color:white;}
-.add-variant-btn{margin:8px;font-family:‘IBM Plex Mono’,monospace;font-size:0.6rem;padding:5px 12px;border:1px dashed var(–border2);background:transparent;color:var(–text3);cursor:pointer;letter-spacing:0.08em;transition:all 0.15s;width:calc(100% - 16px);}
-.add-variant-btn:hover{border-color:var(–rust);color:var(–rust);}
+.variant-row input,.variant-row select{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;padding:5px 8px;border:1px solid var(--border);background:var(--surface);color:var(--text);outline:none;}
+.variant-row input:focus,.variant-row select:focus{border-color:var(--rust);}
+.del-row-btn{background:none;border:1px solid var(--border);color:var(--text3);cursor:pointer;font-size:0.7rem;padding:4px;transition:all 0.15s;text-align:center;}
+.del-row-btn:hover{background:var(--rust);border-color:var(--rust);color:white;}
+.add-variant-btn{margin:8px;font-family:'IBM Plex Mono',monospace;font-size:0.6rem;padding:5px 12px;border:1px dashed var(--border2);background:transparent;color:var(--text3);cursor:pointer;letter-spacing:0.08em;transition:all 0.15s;width:calc(100% - 16px);}
+.add-variant-btn:hover{border-color:var(--rust);color:var(--rust);}
 
 /* SELL MODAL */
 .sell-variant-list{display:flex;flex-direction:column;gap:6px;}
-.sell-variant-row{display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(–surface2);border:1px solid var(–border);}
-.sell-variant-info{flex:1;font-size:0.72rem;color:var(–text2);}
-.sell-variant-stock{font-size:0.62rem;color:var(–text3);}
-.sell-variant-btn{font-family:‘IBM Plex Mono’,monospace;font-size:0.62rem;padding:4px 12px;border:1px solid var(–sage);background:transparent;color:var(–sage);cursor:pointer;transition:all 0.15s;letter-spacing:0.06em;}
-.sell-variant-btn:hover{background:var(–sage);color:white;}
+.sell-variant-row{display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--surface2);border:1px solid var(--border);}
+.sell-variant-info{flex:1;font-size:0.72rem;color:var(--text2);}
+.sell-variant-stock{font-size:0.62rem;color:var(--text3);}
+.sell-variant-btn{font-family:'IBM Plex Mono',monospace;font-size:0.62rem;padding:4px 12px;border:1px solid var(--sage);background:transparent;color:var(--sage);cursor:pointer;transition:all 0.15s;letter-spacing:0.06em;}
+.sell-variant-btn:hover{background:var(--sage);color:white;}
 .sell-variant-btn:disabled{opacity:0.3;cursor:not-allowed;}
 
 /* SETTINGS */
-.settings-panel{position:fixed;top:0;right:0;width:320px;height:100vh;background:var(–surface);border-left:1px solid var(–border);z-index:200;transform:translateX(100%);transition:transform 0.25s;overflow-y:auto;box-shadow:-4px 0 24px rgba(0,0,0,0.5);}
+.settings-panel{position:fixed;top:0;right:0;width:320px;height:100vh;background:var(--surface);border-left:1px solid var(--border);z-index:200;transform:translateX(100%);transition:transform 0.25s;overflow-y:auto;box-shadow:-4px 0 24px rgba(0,0,0,0.5);}
 .settings-panel.open{transform:translateX(0);}
-.settings-head{background:var(–surface2);padding:16px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(–border);}
-.settings-head h2{font-family:‘Noto Serif JP’,serif;font-size:0.95rem;font-weight:600;}
+.settings-head{background:var(--surface2);padding:16px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border);}
+.settings-head h2{font-family:'Noto Serif JP',serif;font-size:0.95rem;font-weight:600;}
 .settings-body{padding:20px;}
 .settings-section{margin-bottom:24px;}
-.settings-section-label{font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(–text3);border-bottom:1px solid var(–border);padding-bottom:6px;margin-bottom:12px;}
+.settings-section-label{font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--text3);border-bottom:1px solid var(--border);padding-bottom:6px;margin-bottom:12px;}
 .store-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;}
-.store-chip{font-size:0.65rem;padding:4px 10px;background:var(–surface3);color:var(–text2);border:1px solid var(–border);display:flex;align-items:center;gap:6px;letter-spacing:0.06em;}
-.store-chip button{background:none;border:none;color:var(–text3);cursor:pointer;font-size:0.75rem;line-height:1;padding:0;}
-.store-chip button:hover{color:var(–rust);}
+.store-chip{font-size:0.65rem;padding:4px 10px;background:var(--surface3);color:var(--text2);border:1px solid var(--border);display:flex;align-items:center;gap:6px;letter-spacing:0.06em;}
+.store-chip button{background:none;border:none;color:var(--text3);cursor:pointer;font-size:0.75rem;line-height:1;padding:0;}
+.store-chip button:hover{color:var(--rust);}
 .add-row{display:flex;gap:8px;}
 #settings-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:199;}
 
 /* MISC */
-.empty-state{text-align:center;padding:80px 40px;color:var(–text3);}
-.empty-state h3{font-family:‘Noto Serif JP’,serif;font-size:1.2rem;color:var(–text2);margin-bottom:8px;}
+.empty-state{text-align:center;padding:80px 40px;color:var(--text3);}
+.empty-state h3{font-family:'Noto Serif JP',serif;font-size:1.2rem;color:var(--text2);margin-bottom:8px;}
 .loading-overlay{position:fixed;inset:0;background:rgba(15,13,11,0.85);z-index:300;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;}
-.loading-spinner{width:32px;height:32px;border:2px solid var(–border2);border-top-color:var(–rust);border-radius:50%;animation:spin 0.8s linear infinite;}
+.loading-spinner{width:32px;height:32px;border:2px solid var(--border2);border-top-color:var(--rust);border-radius:50%;animation:spin 0.8s linear infinite;}
 @keyframes spin{to{transform:rotate(360deg);}}
-.loading-text{font-size:0.75rem;color:var(–text3);letter-spacing:0.15em;}
-.store-tab-btn{font-family:‘IBM Plex Mono’,monospace;font-size:0.68rem;letter-spacing:0.1em;padding:6px 16px;border:1px solid var(–border2);background:transparent;color:var(–text3);cursor:pointer;transition:all 0.15s;}
-.store-tab-btn.active{background:var(–rust);color:white;border-color:var(–rust);}
-.store-tab-btn:hover:not(.active){background:var(–surface3);color:var(–text);}
+.loading-text{font-size:0.75rem;color:var(--text3);letter-spacing:0.15em;}
+.store-tab-btn{font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.1em;padding:6px 16px;border:1px solid var(--border2);background:transparent;color:var(--text3);cursor:pointer;transition:all 0.15s;}
+.store-tab-btn.active{background:var(--rust);color:white;border-color:var(--rust);}
+.store-tab-btn:hover:not(.active){background:var(--surface3);color:var(--text);}
 @media print{.header,.toolbar,.card-actions,.modal-overlay,.settings-panel,.loading-overlay{display:none!important;}.main-content{overflow:visible!important;}.page{display:block!important;}.items-grid{grid-template-columns:repeat(3,1fr)!important;}}
-::-webkit-scrollbar-track{background:var(–bg);}
-::-webkit-scrollbar-thumb{background:var(–border2);}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--border2);}
 
 /* MOBILE */
 @media(max-width:768px){
-.header{padding:0 12px;flex-wrap:wrap;}
-.header-brand{padding:10px 12px 10px 0;border-right:none;}
-.header-brand h1{font-size:0.95rem;}
-.nav-tabs{padding:0;overflow-x:auto;-webkit-overflow-scrolling:touch;border-top:1px solid var(–border);width:100%;order:3;}
-.nav-tab{padding:0 14px;font-size:0.65rem;min-height:40px;}
-.header-right{gap:10px;padding:8px 12px;border-left:none;border-top:1px solid var(–border);width:100%;order:2;justify-content:space-between;}
-.stat-pill-value{font-size:0.8rem;}
-.sync-status{font-size:0.55rem;padding:3px 8px;}
-.toolbar{padding:8px 12px;flex-wrap:wrap;gap:6px;}
-.btn{padding:7px 12px;font-size:0.65rem;}
-.filter-group{width:100%;flex-wrap:wrap;gap:4px;}
-.grid-wrap{padding:12px;}
-.items-grid{grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:10px;}
-.card-body{padding:8px 10px;}
-.card-name{font-size:0.85rem;}
-.card-actions{padding:6px 10px;gap:4px;}
-.act-btn{font-size:0.55rem;padding:5px 6px;}
-.analytics-wrap{padding:12px;}
-.summary-grid{grid-template-columns:repeat(2,1fr);gap:8px;}
-.analytics-grid{grid-template-columns:1fr;gap:12px;}
-.modal{width:100%;max-width:100%;max-height:92vh;margin:auto 0 0 0;border-radius:12px 12px 0 0;}
-.modal-overlay{align-items:flex-end;}
-.form-row{grid-template-columns:1fr;}
-.variant-col-labels{grid-template-columns:1fr 1fr 50px 1fr 28px;font-size:0.5rem;}
-.variant-row{grid-template-columns:1fr 1fr 50px 1fr 28px;}
-.variant-row select,.variant-row input{font-size:0.65rem;padding:4px 5px;}
-.settings-panel{width:100%;border-radius:12px 12px 0 0;top:auto;bottom:0;height:80vh;transform:translateY(100%);}
-.settings-panel.open{transform:translateY(0);}
-.sell-variant-row{flex-wrap:wrap;gap:6px;}
+  .header{padding:0 12px;flex-wrap:wrap;}
+  .header-brand{padding:10px 12px 10px 0;border-right:none;}
+  .header-brand h1{font-size:0.95rem;}
+  .nav-tabs{padding:0;overflow-x:auto;-webkit-overflow-scrolling:touch;border-top:1px solid var(--border);width:100%;order:3;}
+  .nav-tab{padding:0 14px;font-size:0.65rem;min-height:40px;}
+  .header-right{gap:10px;padding:8px 12px;border-left:none;border-top:1px solid var(--border);width:100%;order:2;justify-content:space-between;}
+  .stat-pill-value{font-size:0.8rem;}
+  .sync-status{font-size:0.55rem;padding:3px 8px;}
+  .toolbar{padding:8px 12px;flex-wrap:wrap;gap:6px;}
+  .btn{padding:7px 12px;font-size:0.65rem;}
+  .filter-group{width:100%;flex-wrap:wrap;gap:4px;}
+  .grid-wrap{padding:12px;}
+  .items-grid{grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:10px;}
+  .card-body{padding:8px 10px;}
+  .card-name{font-size:0.85rem;}
+  .card-actions{padding:6px 10px;gap:4px;}
+  .act-btn{font-size:0.55rem;padding:5px 6px;}
+  .analytics-wrap{padding:12px;}
+  .summary-grid{grid-template-columns:repeat(2,1fr);gap:8px;}
+  .analytics-grid{grid-template-columns:1fr;gap:12px;}
+  .modal{width:100%;max-width:100%;max-height:92vh;margin:auto 0 0 0;border-radius:12px 12px 0 0;}
+  .modal-overlay{align-items:flex-end;}
+  .form-row{grid-template-columns:1fr;}
+  .variant-col-labels{grid-template-columns:1fr 1fr 50px 1fr 28px;font-size:0.5rem;}
+  .variant-row{grid-template-columns:1fr 1fr 50px 1fr 28px;}
+  .variant-row select,.variant-row input{font-size:0.65rem;padding:4px 5px;}
+  .settings-panel{width:100%;border-radius:12px 12px 0 0;top:auto;bottom:0;height:80vh;transform:translateY(100%);}
+  .settings-panel.open{transform:translateY(0);}
+  .sell-variant-row{flex-wrap:wrap;gap:6px;}
 }
 </style>
-
 </head>
 <body>
 <div class="app">
@@ -361,7 +358,6 @@ body{background:var(--bg);color:var(--text);font-family:'IBM Plex Mono',monospac
 </div>
 
 <!-- ADD/EDIT MODAL -->
-
 <div class="modal-overlay" id="modal-overlay" onclick="closeModalBg(event)">
   <div class="modal">
     <div class="modal-head">
@@ -434,7 +430,6 @@ body{background:var(--bg);color:var(--text);font-family:'IBM Plex Mono',monospac
 </div>
 
 <!-- SELL MODAL -->
-
 <div class="modal-overlay" id="sell-modal-overlay" onclick="closeSellModalBg(event)">
   <div class="modal" style="width:420px;">
     <div class="modal-head">
@@ -457,7 +452,6 @@ body{background:var(--bg);color:var(--text);font-family:'IBM Plex Mono',monospac
 </div>
 
 <!-- SETTINGS -->
-
 <div class="settings-panel" id="settings-panel">
   <div class="settings-head">
     <h2>⚙ 店舗設定</h2>
@@ -477,7 +471,6 @@ body{background:var(--bg);color:var(--text);font-family:'IBM Plex Mono',monospac
 <div id="settings-overlay" onclick="closeSettings()"></div>
 
 <!-- LOADING -->
-
 <div class="loading-overlay" id="loading-overlay">
   <div class="loading-spinner"></div>
   <div class="loading-text" id="loading-text">Airtableに接続中...</div>
@@ -766,25 +759,22 @@ function exportPDF() {
     'tr:nth-child(even){background:#f9f9f9;}' +
     '@media print{@page{margin:15mm;}}' +
     '</style></head><body>' +
+    '<h1>'+title+'</h1>' +
+    '<div class="sub">出力日：'+date+' ／ 件数：'+filtered.length+'件</div>' +
+    '<table><thead><tr><th>写真</th><th>品番</th><th>カテゴリ</th><th>販売価格</th><th>バリアント（在庫中）</th></tr></thead>' +
+    '<tbody>'+rows+'</tbody></table>' +
+    '</body></html>';
 
-```
-'<h1>'+title+'</h1>' +
-'<div class="sub">出力日：'+date+' ／ 件数：'+filtered.length+'件</div>' +
-'<table><thead><tr><th>写真</th><th>品番</th><th>カテゴリ</th><th>販売価格</th><th>バリアント（在庫中）</th></tr></thead>' +
-'<tbody>'+rows+'</tbody></table>' +
-'</body></html>';
-```
-
-var win = window.open(’’, ‘_blank’);
-win.document.write(html);
-win.document.close();
-setTimeout(function() { win.print(); }, 800);
+  var win = window.open('', '_blank');
+  win.document.write(html);
+  win.document.close();
+  setTimeout(function() { win.print(); }, 800);
 }
 function setFilter(f, btn) {
-currentFilter = f;
-document.querySelectorAll(’.filter-btn’).forEach(function(b) { b.classList.remove(‘active’); });
-btn.classList.add(‘active’);
-render();
+  currentFilter = f;
+  document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  render();
 }
 function setStoreFilter(v) { currentStoreFilter = v; render(); }
 function setSort(v) { currentSort = v; render(); }
@@ -792,430 +782,426 @@ function setSort(v) { currentSort = v; render(); }
 // ═══════════════════════════════════════════
 // STORE MANAGEMENT
 // ═══════════════════════════════════════════
-function persistStores() { localStorage.setItem(‘fg-stores’, JSON.stringify(stores)); }
+function persistStores() { localStorage.setItem('fg-stores', JSON.stringify(stores)); }
 function renderStoreFilter() {
-var sel = document.getElementById(‘filter-store’);
-var cur = sel.value;
-sel.innerHTML = ‘<option value="">全店舗</option>’ +
-stores.map(function(s) { return ‘<option value=”’+s+’”’+(s===cur?’ selected’:’’)+’>’+s+’</option>’; }).join(’’);
+  var sel = document.getElementById('filter-store');
+  var cur = sel.value;
+  sel.innerHTML = '<option value="">全店舗</option>' +
+    stores.map(function(s) { return '<option value="'+s+'"'+(s===cur?' selected':'')+'>'+s+'</option>'; }).join('');
 }
 function renderSettingsStores() {
-document.getElementById(‘settings-store-chips’).innerHTML =
-stores.map(function(s) { return ‘<div class="store-chip">’+s+’<button onclick="removeStore(\''+s+'\')">✕</button></div>’; }).join(’’);
+  document.getElementById('settings-store-chips').innerHTML =
+    stores.map(function(s) { return '<div class="store-chip">'+s+'<button onclick="removeStore(\''+s+'\')">✕</button></div>'; }).join('');
 }
 function addStore() {
-var v = document.getElementById(‘new-store-input’).value.trim();
-if (!v || stores.indexOf(v) >= 0) return;
-stores.push(v); persistStores(); renderSettingsStores(); renderStoreFilter();
-document.getElementById(‘new-store-input’).value = ‘’;
+  var v = document.getElementById('new-store-input').value.trim();
+  if (!v || stores.indexOf(v) >= 0) return;
+  stores.push(v); persistStores(); renderSettingsStores(); renderStoreFilter();
+  document.getElementById('new-store-input').value = '';
 }
 function removeStore(name) {
-if (!confirm(’「’+name+’」を削除しますか？’)) return;
-stores = stores.filter(function(s) { return s !== name; });
-persistStores(); renderSettingsStores(); renderStoreFilter();
+  if (!confirm('「'+name+'」を削除しますか？')) return;
+  stores = stores.filter(function(s) { return s !== name; });
+  persistStores(); renderSettingsStores(); renderStoreFilter();
 }
 function openSettings() {
-renderSettingsStores();
-document.getElementById(‘settings-panel’).classList.add(‘open’);
-document.getElementById(‘settings-overlay’).style.display = ‘block’;
+  renderSettingsStores();
+  document.getElementById('settings-panel').classList.add('open');
+  document.getElementById('settings-overlay').style.display = 'block';
 }
 function closeSettings() {
-document.getElementById(‘settings-panel’).classList.remove(‘open’);
-document.getElementById(‘settings-overlay’).style.display = ‘none’;
+  document.getElementById('settings-panel').classList.remove('open');
+  document.getElementById('settings-overlay').style.display = 'none';
 }
 
 // ═══════════════════════════════════════════
 // VARIANT ROWS
 // ═══════════════════════════════════════════
 function addVariantRow(size, color, stock, store) {
-size  = size  || ‘M’;
-color = color || ‘黒’;
-stock = (stock === undefined || stock === null) ? 1 : stock;
-store = store || ‘’;
-var container = document.getElementById(‘variant-rows’);
-var id = ‘vr_’ + Date.now() + ‘_’ + Math.random().toString(36).slice(2,4);
-var div = document.createElement(‘div’);
-div.className = ‘variant-row’; div.id = id;
-var sOpts  = SIZES.map(function(s)  { return ‘<option’+(s===size?’ selected’:’’)+’>’+s+’</option>’; }).join(’’);
-var cOpts  = COLORS.map(function(c) { return ‘<option’+(c===color?’ selected’:’’)+’>’+c+’</option>’; }).join(’’);
-var stOpts = [’’].concat(stores).map(function(s) {
-return ‘<option value=”’+s+’”’+(s===store?’ selected’:’’)+’>’+(s||’— 店舗未設定 —’)+’</option>’;
-}).join(’’);
-div.innerHTML = ‘<select>’+sOpts+’</select><select>’+cOpts+’</select>’ +
-‘<input type="number" min="0" value="'+stock+'">’ +
-‘<select>’+stOpts+’</select>’ +
-‘<button class="del-row-btn" onclick="document.getElementById(\''+id+'\').remove()">✕</button>’;
-container.appendChild(div);
+  size  = size  || 'M';
+  color = color || '黒';
+  stock = (stock === undefined || stock === null) ? 1 : stock;
+  store = store || '';
+  var container = document.getElementById('variant-rows');
+  var id = 'vr_' + Date.now() + '_' + Math.random().toString(36).slice(2,4);
+  var div = document.createElement('div');
+  div.className = 'variant-row'; div.id = id;
+  var sOpts  = SIZES.map(function(s)  { return '<option'+(s===size?' selected':'')+'>'+s+'</option>'; }).join('');
+  var cOpts  = COLORS.map(function(c) { return '<option'+(c===color?' selected':'')+'>'+c+'</option>'; }).join('');
+  var stOpts = [''].concat(stores).map(function(s) {
+    return '<option value="'+s+'"'+(s===store?' selected':'')+'>'+(s||'— 店舗未設定 —')+'</option>';
+  }).join('');
+  div.innerHTML = '<select>'+sOpts+'</select><select>'+cOpts+'</select>' +
+    '<input type="number" min="0" value="'+stock+'">' +
+    '<select>'+stOpts+'</select>' +
+    '<button class="del-row-btn" onclick="document.getElementById(\''+id+'\').remove()">✕</button>';
+  container.appendChild(div);
 }
 function getVariantsFromModal() {
-return Array.from(document.querySelectorAll(’#variant-rows .variant-row’)).map(function(row) {
-var s = row.querySelectorAll(‘select’);
-var i = row.querySelector(‘input[type=“number”]’);
-return { size:s[0].value, color:s[1].value, stock:parseInt(i.value)||0, store:s[2].value||’’ };
-});
+  return Array.from(document.querySelectorAll('#variant-rows .variant-row')).map(function(row) {
+    var s = row.querySelectorAll('select');
+    var i = row.querySelector('input[type="number"]');
+    return { size:s[0].value, color:s[1].value, stock:parseInt(i.value)||0, store:s[2].value||'' };
+  });
 }
 function setVariantsInModal(variants) {
-document.getElementById(‘variant-rows’).innerHTML = ‘’;
-if (!variants || variants.length === 0) { addVariantRow(); return; }
-variants.forEach(function(v) { addVariantRow(v.size, v.color, v.stock, v.store||’’); });
+  document.getElementById('variant-rows').innerHTML = '';
+  if (!variants || variants.length === 0) { addVariantRow(); return; }
+  variants.forEach(function(v) { addVariantRow(v.size, v.color, v.stock, v.store||''); });
 }
 
 // ═══════════════════════════════════════════
 // IMAGE
 // ═══════════════════════════════════════════
 function handleImgFile(e) {
-var file = e.target.files[0]; if (!file) return;
-pendingImgFile  = file;
-pendingImgClear = false;
-var url = URL.createObjectURL(file);
-var img = document.getElementById(‘img-preview’);
-img.src = url; img.style.display = ‘block’;
-document.getElementById(‘img-upload-hint’).style.display = ‘none’;
-document.getElementById(‘img-clear-row’).style.display = ‘block’;
+  var file = e.target.files[0]; if (!file) return;
+  pendingImgFile  = file;
+  pendingImgClear = false;
+  var url = URL.createObjectURL(file);
+  var img = document.getElementById('img-preview');
+  img.src = url; img.style.display = 'block';
+  document.getElementById('img-upload-hint').style.display = 'none';
+  document.getElementById('img-clear-row').style.display = 'block';
 }
 function clearImg() {
-pendingImgFile  = null; pendingImgClear = true;
-document.getElementById(‘img-preview’).style.display = ‘none’;
-document.getElementById(‘img-upload-hint’).style.display = ‘block’;
-document.getElementById(‘img-clear-row’).style.display = ‘none’;
-document.getElementById(‘img-file-input’).value = ‘’;
+  pendingImgFile  = null; pendingImgClear = true;
+  document.getElementById('img-preview').style.display = 'none';
+  document.getElementById('img-upload-hint').style.display = 'block';
+  document.getElementById('img-clear-row').style.display = 'none';
+  document.getElementById('img-file-input').value = '';
 }
 function setImgInModal(item) {
-pendingImgFile = null; pendingImgClear = false;
-document.getElementById(‘img-file-input’).value = ‘’;
-var img      = document.getElementById(‘img-preview’);
-var hint     = document.getElementById(‘img-upload-hint’);
-var clearRow = document.getElementById(‘img-clear-row’);
-var src = item && (item.imgThumb || item.imgUrl);
-if (src) {
-img.src = src; img.style.display = ‘block’;
-hint.style.display = ‘none’; clearRow.style.display = ‘block’;
-} else {
-img.style.display = ‘none’; hint.style.display = ‘block’; clearRow.style.display = ‘none’;
-}
+  pendingImgFile = null; pendingImgClear = false;
+  document.getElementById('img-file-input').value = '';
+  var img      = document.getElementById('img-preview');
+  var hint     = document.getElementById('img-upload-hint');
+  var clearRow = document.getElementById('img-clear-row');
+  var src = item && (item.imgThumb || item.imgUrl);
+  if (src) {
+    img.src = src; img.style.display = 'block';
+    hint.style.display = 'none'; clearRow.style.display = 'block';
+  } else {
+    img.style.display = 'none'; hint.style.display = 'block'; clearRow.style.display = 'none';
+  }
 }
 
 // ═══════════════════════════════════════════
 // RENDER
 // ═══════════════════════════════════════════
 function render() {
-var grid = document.getElementById(‘items-grid’);
-var empty = document.getElementById(‘empty-state’);
-var filtered = items.slice();
-if (currentFilter === ‘instock’) filtered = filtered.filter(function(i) { return !isFullySold(i); });
-if (currentFilter === ‘sold’)    filtered = filtered.filter(function(i) { return isFullySold(i); });
-if (currentStoreFilter) filtered = filtered.filter(function(i) {
-return (i.variants||[]).some(function(v) { return v.store === currentStoreFilter; });
-});
-if (currentSort === ‘name’) {
-filtered.sort(function(a,b) { return (a.name||’’).localeCompare(b.name||’’, ‘ja’); });
-} else if (currentSort === ‘category’) {
-filtered.sort(function(a,b) { return (a.category||’’).localeCompare(b.category||’’, ‘ja’); });
-} else if (currentSort === ‘stock’) {
-filtered.sort(function(a,b) { return totalVariantStock(b) - totalVariantStock(a); });
-}
+  var grid = document.getElementById('items-grid');
+  var empty = document.getElementById('empty-state');
+  var filtered = items.slice();
+  if (currentFilter === 'instock') filtered = filtered.filter(function(i) { return !isFullySold(i); });
+  if (currentFilter === 'sold')    filtered = filtered.filter(function(i) { return isFullySold(i); });
+  if (currentStoreFilter) filtered = filtered.filter(function(i) {
+    return (i.variants||[]).some(function(v) { return v.store === currentStoreFilter; });
+  });
+  if (currentSort === 'name') {
+    filtered.sort(function(a,b) { return (a.name||'').localeCompare(b.name||'', 'ja'); });
+  } else if (currentSort === 'category') {
+    filtered.sort(function(a,b) { return (a.category||'').localeCompare(b.category||'', 'ja'); });
+  } else if (currentSort === 'stock') {
+    filtered.sort(function(a,b) { return totalVariantStock(b) - totalVariantStock(a); });
+  }
 
-var tStock = items.reduce(function(s,i) { return s+totalVariantStock(i); }, 0);
-var tSold  = items.reduce(function(s,i) { return s+totalVariantSold(i); }, 0);
-var tRev   = items.reduce(function(s,i) { return s+(totalVariantSold(i)*(i.price||0)); }, 0);
-document.getElementById(‘h-stat-instock’).textContent = tStock;
-document.getElementById(‘h-stat-sold’).textContent    = tSold;
-document.getElementById(‘h-stat-revenue’).textContent = ‘¥’+tRev.toLocaleString();
-document.getElementById(‘tab-inventory-count’).textContent = items.length;
-renderStoreFilter();
+  var tStock = items.reduce(function(s,i) { return s+totalVariantStock(i); }, 0);
+  var tSold  = items.reduce(function(s,i) { return s+totalVariantSold(i); }, 0);
+  var tRev   = items.reduce(function(s,i) { return s+(totalVariantSold(i)*(i.price||0)); }, 0);
+  document.getElementById('h-stat-instock').textContent = tStock;
+  document.getElementById('h-stat-sold').textContent    = tSold;
+  document.getElementById('h-stat-revenue').textContent = '¥'+tRev.toLocaleString();
+  document.getElementById('tab-inventory-count').textContent = items.length;
+  renderStoreFilter();
 
-if (filtered.length === 0) { grid.innerHTML=’’; empty.style.display=‘block’; return; }
-empty.style.display = ‘none’;
+  if (filtered.length === 0) { grid.innerHTML=''; empty.style.display='block'; return; }
+  empty.style.display = 'none';
 
-grid.innerHTML = filtered.map(function(item) {
-var fullyS   = isFullySold(item);
-var variants = item.variants || [];
-var tS = totalVariantStock(item), tD = totalVariantSold(item);
+  grid.innerHTML = filtered.map(function(item) {
+    var fullyS   = isFullySold(item);
+    var variants = item.variants || [];
+    var tS = totalVariantStock(item), tD = totalVariantSold(item);
 
-```
-var chips = variants.map(function(v) {
-  var cls = v.stock===0?'zero':(v.stock<=2?'low':'');
-  var sl  = v.store?'<span style="font-size:0.5rem;opacity:0.7;margin-left:2px;">['+v.store+']</span>':'';
-  return '<span class="variant-chip '+cls+'"><span class="color-dot" style="background:'+colorToHex(v.color)+';"></span>'+v.size+'/'+v.color+'×'+v.stock+sl+'</span>';
-}).join('');
+    var chips = variants.map(function(v) {
+      var cls = v.stock===0?'zero':(v.stock<=2?'low':'');
+      var sl  = v.store?'<span style="font-size:0.5rem;opacity:0.7;margin-left:2px;">['+v.store+']</span>':'';
+      return '<span class="variant-chip '+cls+'"><span class="color-dot" style="background:'+colorToHex(v.color)+';"></span>'+v.size+'/'+v.color+'×'+v.stock+sl+'</span>';
+    }).join('');
 
-var uStores = [];
-variants.forEach(function(v) { if(v.store && uStores.indexOf(v.store)<0) uStores.push(v.store); });
-var sTags = uStores.map(function(s) { return '<span class="card-store-tag">'+s+'</span>'; }).join('');
+    var uStores = [];
+    variants.forEach(function(v) { if(v.store && uStores.indexOf(v.store)<0) uStores.push(v.store); });
+    var sTags = uStores.map(function(s) { return '<span class="card-store-tag">'+s+'</span>'; }).join('');
 
-var arrStr  = item.arrived ? '<span>入荷: '+item.arrived+'</span>' : '';
-var evts    = item.soldEvents || [];
-var lastSold = evts.length ? evts[evts.length-1].date : null;
-var soldStr = lastSold ? '<span class="sold-date-text">最終売却: '+lastSold+'</span>' : '';
+    var arrStr  = item.arrived ? '<span>入荷: '+item.arrived+'</span>' : '';
+    var evts    = item.soldEvents || [];
+    var lastSold = evts.length ? evts[evts.length-1].date : null;
+    var soldStr = lastSold ? '<span class="sold-date-text">最終売却: '+lastSold+'</span>' : '';
 
-var imgSrc  = item.imgThumb || item.imgUrl;
-var imgHtml = imgSrc
-  ? '<img src="'+imgSrc+'" style="width:100%;height:100%;object-fit:cover;display:block;">'
-  : '<div class="img-placeholder" onclick="openEditModal(\''+item.id+'\')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M4 16l4-4 4 4 4-8 4 8"/></svg><span>写真を追加</span></div>';
+    var imgSrc  = item.imgThumb || item.imgUrl;
+    var imgHtml = imgSrc
+      ? '<img src="'+imgSrc+'" style="width:100%;height:100%;object-fit:cover;display:block;">'
+      : '<div class="img-placeholder" onclick="openEditModal(\''+item.id+'\')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M4 16l4-4 4 4 4-8 4 8"/></svg><span>写真を追加</span></div>';
 
-var sellBtn = fullyS
-  ? '<button class="act-btn unsell" onclick="undoLastSell(\''+item.id+'\')">売却を戻す</button>'
-  : '<button class="act-btn sell" onclick="openSellModal(\''+item.id+'\')">売却記録</button>';
+    var sellBtn = fullyS
+      ? '<button class="act-btn unsell" onclick="undoLastSell(\''+item.id+'\')">売却を戻す</button>'
+      : '<button class="act-btn sell" onclick="openSellModal(\''+item.id+'\')">売却記録</button>';
 
-return '<div class="item-card'+(fullyS?' fully-sold':'')+'" id="card-'+item.id+'">' +
-  '<div class="card-img">'+imgHtml+'<div class="sold-stamp-overlay"><div class="sold-stamp-text">SOLD</div></div></div>' +
-  '<div class="card-body">' +
-    '<div class="card-header-row"><span class="card-id">#'+item.id.slice(-6).toUpperCase()+'</span><span class="card-price">¥'+(item.price||0).toLocaleString()+'</span></div>' +
-    '<div class="card-name">'+(item.name||'（無題）')+'</div>' +
-    '<div class="card-category-size">'+(item.category||'')+' — 在庫:'+tS+'点 / 売:'+tD+'点</div>' +
-    '<div class="variant-list">'+(chips||'<span style="font-size:0.6rem;color:var(--text3);">バリアントなし</span>')+'</div>' +
-    '<div class="card-stores">'+sTags+'</div>' +
-    '<div class="card-dates">'+arrStr+soldStr+'</div>' +
-  '</div>' +
-  '<div class="card-actions">'+sellBtn+'<button class="act-btn" onclick="openEditModal(\''+item.id+'\')">編集</button><button class="act-btn del" onclick="deleteItem(\''+item.id+'\')">✕</button></div>' +
-'</div>';
-```
-
-}).join(’’);
+    return '<div class="item-card'+(fullyS?' fully-sold':'')+'" id="card-'+item.id+'">' +
+      '<div class="card-img">'+imgHtml+'<div class="sold-stamp-overlay"><div class="sold-stamp-text">SOLD</div></div></div>' +
+      '<div class="card-body">' +
+        '<div class="card-header-row"><span class="card-id">#'+item.id.slice(-6).toUpperCase()+'</span><span class="card-price">¥'+(item.price||0).toLocaleString()+'</span></div>' +
+        '<div class="card-name">'+(item.name||'（無題）')+'</div>' +
+        '<div class="card-category-size">'+(item.category||'')+' — 在庫:'+tS+'点 / 売:'+tD+'点</div>' +
+        '<div class="variant-list">'+(chips||'<span style="font-size:0.6rem;color:var(--text3);">バリアントなし</span>')+'</div>' +
+        '<div class="card-stores">'+sTags+'</div>' +
+        '<div class="card-dates">'+arrStr+soldStr+'</div>' +
+      '</div>' +
+      '<div class="card-actions">'+sellBtn+'<button class="act-btn" onclick="openEditModal(\''+item.id+'\')">編集</button><button class="act-btn del" onclick="deleteItem(\''+item.id+'\')">✕</button></div>' +
+    '</div>';
+  }).join('');
 }
 
 // ═══════════════════════════════════════════
 // ADD / EDIT MODAL
 // ═══════════════════════════════════════════
 function openAddModal() {
-editingId = null;
-document.getElementById(‘modal-title’).textContent = ‘商品を追加’;
-document.getElementById(‘edit-id’).value           = ‘’;
-document.getElementById(‘input-name’).value        = ‘’;
-document.getElementById(‘input-category’).value    = ‘トップス’;
-document.getElementById(‘input-price’).value       = ‘’;
-document.getElementById(‘input-cost’).value        = ‘’;
-document.getElementById(‘input-arrived’).value     = new Date().toISOString().slice(0,10);
-document.getElementById(‘input-note’).value        = ‘’;
-setImgInModal(null);
-setVariantsInModal([]);
-document.getElementById(‘modal-overlay’).classList.add(‘open’);
+  editingId = null;
+  document.getElementById('modal-title').textContent = '商品を追加';
+  document.getElementById('edit-id').value           = '';
+  document.getElementById('input-name').value        = '';
+  document.getElementById('input-category').value    = 'トップス';
+  document.getElementById('input-price').value       = '';
+  document.getElementById('input-cost').value        = '';
+  document.getElementById('input-arrived').value     = new Date().toISOString().slice(0,10);
+  document.getElementById('input-note').value        = '';
+  setImgInModal(null);
+  setVariantsInModal([]);
+  document.getElementById('modal-overlay').classList.add('open');
 }
 function openEditModal(id) {
-var item = items.find(function(i) { return i.id === id; });
-if (!item) return;
-editingId = id;
-document.getElementById(‘modal-title’).textContent = ‘商品を編集’;
-document.getElementById(‘edit-id’).value           = id;
-document.getElementById(‘input-name’).value        = item.name     || ‘’;
-document.getElementById(‘input-category’).value    = item.category || ‘トップス’;
-document.getElementById(‘input-price’).value       = item.price    || ‘’;
-document.getElementById(‘input-cost’).value        = item.cost     || ‘’;
-document.getElementById(‘input-arrived’).value     = item.arrived  || ‘’;
-document.getElementById(‘input-note’).value        = item.note     || ‘’;
-setImgInModal(item);
-setVariantsInModal(item.variants || []);
-document.getElementById(‘modal-overlay’).classList.add(‘open’);
+  var item = items.find(function(i) { return i.id === id; });
+  if (!item) return;
+  editingId = id;
+  document.getElementById('modal-title').textContent = '商品を編集';
+  document.getElementById('edit-id').value           = id;
+  document.getElementById('input-name').value        = item.name     || '';
+  document.getElementById('input-category').value    = item.category || 'トップス';
+  document.getElementById('input-price').value       = item.price    || '';
+  document.getElementById('input-cost').value        = item.cost     || '';
+  document.getElementById('input-arrived').value     = item.arrived  || '';
+  document.getElementById('input-note').value        = item.note     || '';
+  setImgInModal(item);
+  setVariantsInModal(item.variants || []);
+  document.getElementById('modal-overlay').classList.add('open');
 }
-function closeModal() { document.getElementById(‘modal-overlay’).classList.remove(‘open’); }
-function closeModalBg(e) { if (e.target === document.getElementById(‘modal-overlay’)) closeModal(); }
+function closeModal() { document.getElementById('modal-overlay').classList.remove('open'); }
+function closeModalBg(e) { if (e.target === document.getElementById('modal-overlay')) closeModal(); }
 
 function saveItem() {
-var name = document.getElementById(‘input-name’).value.trim();
-if (!name) { alert(‘商品名を入力してください’); return; }
-var variants = getVariantsFromModal();
-var saveBtn  = document.getElementById(‘save-btn’);
-saveBtn.disabled = true;
-showLoading(‘Airtableに保存中…’);
+  var name = document.getElementById('input-name').value.trim();
+  if (!name) { alert('商品名を入力してください'); return; }
+  var variants = getVariantsFromModal();
+  var saveBtn  = document.getElementById('save-btn');
+  saveBtn.disabled = true;
+  showLoading('Airtableに保存中...');
 
-var fields = {
-‘商品’:      name,
-‘カテゴリー’: document.getElementById(‘input-category’).value,
-‘販売価格’:  parseInt(document.getElementById(‘input-price’).value) || 0,
-‘仕入値’:    parseInt(document.getElementById(‘input-cost’).value)  || 0,
-‘メモ’:      document.getElementById(‘input-note’).value.trim(),
-‘バリアント’: JSON.stringify(variants),
-};
-var arrived = document.getElementById(‘input-arrived’).value;
-if (arrived) fields[‘入荷日’] = arrived;
+  var fields = {
+    '商品':      name,
+    'カテゴリー': document.getElementById('input-category').value,
+    '販売価格':  parseInt(document.getElementById('input-price').value) || 0,
+    '仕入値':    parseInt(document.getElementById('input-cost').value)  || 0,
+    'メモ':      document.getElementById('input-note').value.trim(),
+    'バリアント': JSON.stringify(variants),
+  };
+  var arrived = document.getElementById('input-arrived').value;
+  if (arrived) fields['入荷日'] = arrived;
 
-var promise;
-if (editingId) {
-var item = items.find(function(i) { return i.id === editingId; });
-var oldV = item.variants || [];
-fields[‘バリアント’] = JSON.stringify(variants.map(function(v) {
-var old = oldV.find(function(ov) { return ov.size===v.size && ov.color===v.color && (ov.store||’’)===(v.store||’’); });
-return Object.assign({}, v, { sold: old ? (old.sold||0) : 0 });
-}));
-fields[‘売却履歴’] = JSON.stringify(item.soldEvents || []);
-promise = updateRecord(editingId, fields);
-} else {
-fields[‘売却履歴’] = ‘[]’;
-promise = createRecord(fields);
-}
+  var promise;
+  if (editingId) {
+    var item = items.find(function(i) { return i.id === editingId; });
+    var oldV = item.variants || [];
+    fields['バリアント'] = JSON.stringify(variants.map(function(v) {
+      var old = oldV.find(function(ov) { return ov.size===v.size && ov.color===v.color && (ov.store||'')===(v.store||''); });
+      return Object.assign({}, v, { sold: old ? (old.sold||0) : 0 });
+    }));
+    fields['売却履歴'] = JSON.stringify(item.soldEvents || []);
+    promise = updateRecord(editingId, fields);
+  } else {
+    fields['売却履歴'] = '[]';
+    promise = createRecord(fields);
+  }
 
-promise.then(function(rec) {
-var targetId = editingId || rec.id;
-// 写真アップロード
-if (pendingImgFile) {
-return uploadAttachment(targetId, pendingImgFile).then(function() {
-return loadItems();
-}).catch(function() {
-// 写真失敗でも商品データは保存済み
-return loadItems();
-});
-} else {
-return loadItems();
-}
-}).then(function() {
-saveBtn.disabled = false;
-closeModal();
-}).catch(function(e) {
-saveBtn.disabled = false;
-hideLoading();
-showError(’保存に失敗しました: ’ + e.message);
-});
+  promise.then(function(rec) {
+    var targetId = editingId || rec.id;
+    // 写真アップロード
+    if (pendingImgFile) {
+      return uploadAttachment(targetId, pendingImgFile).then(function() {
+        return loadItems();
+      }).catch(function() {
+        // 写真失敗でも商品データは保存済み
+        return loadItems();
+      });
+    } else {
+      return loadItems();
+    }
+  }).then(function() {
+    saveBtn.disabled = false;
+    closeModal();
+  }).catch(function(e) {
+    saveBtn.disabled = false;
+    hideLoading();
+    showError('保存に失敗しました: ' + e.message);
+  });
 }
 
 // ═══════════════════════════════════════════
 // SELL MODAL
 // ═══════════════════════════════════════════
 function openSellModal(id) {
-sellTargetId = id;
-var item = items.find(function(i) { return i.id === id; });
-if (!item) return;
-document.getElementById(‘sell-modal-item-name’).textContent = item.name;
-document.getElementById(‘sell-date-input’).value = new Date().toISOString().slice(0,10);
-var variants = item.variants || [];
-document.getElementById(‘sell-variant-list’).innerHTML = variants.length === 0
-? ‘<div style="font-size:0.72rem;color:var(--text3);">バリアントが登録されていません。編集から追加してください。</div>’
-: variants.map(function(v, idx) {
-var dot = ‘<span style="width:10px;height:10px;border-radius:50%;background:'+colorToHex(v.color)+';border:1px solid var(--border2);display:inline-block;margin-right:6px;flex-shrink:0;"></span>’;
-var sl  = v.store?’ <span style="font-size:0.6rem;color:var(--text3);">[’+v.store+’]</span>’:’’;
-return ‘<div class="sell-variant-row">’+dot+
-‘<div class="sell-variant-info">’+v.size+’ / ‘+v.color+sl+
-‘<div class="sell-variant-stock">在庫残: ‘+v.stock+‘点</div></div>’+
-‘<button class=“sell-variant-btn” onclick=“recordSell(’+idx+’)”’+(v.stock<=0?’ disabled’:’’)+’>売却 −1</button>’+
-‘</div>’;
-}).join(’’);
-document.getElementById(‘sell-modal-overlay’).classList.add(‘open’);
+  sellTargetId = id;
+  var item = items.find(function(i) { return i.id === id; });
+  if (!item) return;
+  document.getElementById('sell-modal-item-name').textContent = item.name;
+  document.getElementById('sell-date-input').value = new Date().toISOString().slice(0,10);
+  var variants = item.variants || [];
+  document.getElementById('sell-variant-list').innerHTML = variants.length === 0
+    ? '<div style="font-size:0.72rem;color:var(--text3);">バリアントが登録されていません。編集から追加してください。</div>'
+    : variants.map(function(v, idx) {
+        var dot = '<span style="width:10px;height:10px;border-radius:50%;background:'+colorToHex(v.color)+';border:1px solid var(--border2);display:inline-block;margin-right:6px;flex-shrink:0;"></span>';
+        var sl  = v.store?' <span style="font-size:0.6rem;color:var(--text3);">['+v.store+']</span>':'';
+        return '<div class="sell-variant-row">'+dot+
+          '<div class="sell-variant-info">'+v.size+' / '+v.color+sl+
+            '<div class="sell-variant-stock">在庫残: '+v.stock+'点</div></div>'+
+          '<button class="sell-variant-btn" onclick="recordSell('+idx+')"'+(v.stock<=0?' disabled':'')+'>売却 −1</button>'+
+        '</div>';
+      }).join('');
+  document.getElementById('sell-modal-overlay').classList.add('open');
 }
 
 function recordSell(variantIdx) {
-var item = items.find(function(i) { return i.id === sellTargetId; });
-if (!item) return;
-var v = item.variants[variantIdx];
-if (!v || v.stock <= 0) return;
-v.stock -= 1; v.sold = (v.sold||0) + 1;
-var date = document.getElementById(‘sell-date-input’).value || new Date().toISOString().slice(0,10);
-if (!item.soldEvents) item.soldEvents = [];
-item.soldEvents.push({ date:date, size:v.size, color:v.color, store:v.store||’’ });
+  var item = items.find(function(i) { return i.id === sellTargetId; });
+  if (!item) return;
+  var v = item.variants[variantIdx];
+  if (!v || v.stock <= 0) return;
+  v.stock -= 1; v.sold = (v.sold||0) + 1;
+  var date = document.getElementById('sell-date-input').value || new Date().toISOString().slice(0,10);
+  if (!item.soldEvents) item.soldEvents = [];
+  item.soldEvents.push({ date:date, size:v.size, color:v.color, store:v.store||'' });
 
-showLoading(‘売却を記録中…’);
-updateRecord(item.id, {
-‘バリアント’: JSON.stringify(item.variants),
-‘売却履歴’:  JSON.stringify(item.soldEvents)
-}).then(function() {
-hideLoading(); render(); openSellModal(sellTargetId);
-}).catch(function(e) {
-hideLoading(); showError(’保存に失敗しました: ’ + e.message);
-// ロールバック
-v.stock += 1; v.sold = Math.max(0,(v.sold||1)-1); item.soldEvents.pop();
-render(); openSellModal(sellTargetId);
-});
+  showLoading('売却を記録中...');
+  updateRecord(item.id, {
+    'バリアント': JSON.stringify(item.variants),
+    '売却履歴':  JSON.stringify(item.soldEvents)
+  }).then(function() {
+    hideLoading(); render(); openSellModal(sellTargetId);
+  }).catch(function(e) {
+    hideLoading(); showError('保存に失敗しました: ' + e.message);
+    // ロールバック
+    v.stock += 1; v.sold = Math.max(0,(v.sold||1)-1); item.soldEvents.pop();
+    render(); openSellModal(sellTargetId);
+  });
 }
 
 function closeSellModal() {
-document.getElementById(‘sell-modal-overlay’).classList.remove(‘open’); sellTargetId = null;
+  document.getElementById('sell-modal-overlay').classList.remove('open'); sellTargetId = null;
 }
 function closeSellModalBg(e) {
-if (e.target === document.getElementById(‘sell-modal-overlay’)) closeSellModal();
+  if (e.target === document.getElementById('sell-modal-overlay')) closeSellModal();
 }
 
 function undoLastSell(id) {
-var item = items.find(function(i) { return i.id === id; });
-if (!item || !item.soldEvents || item.soldEvents.length === 0) return;
-var last = item.soldEvents.pop();
-var v = (item.variants||[]).find(function(v) {
-return v.size===last.size && v.color===last.color && (v.store||’’)===(last.store||’’);
-});
-if (v) { v.stock += 1; v.sold = Math.max(0,(v.sold||1)-1); }
-showLoading(‘更新中…’);
-updateRecord(item.id, {
-‘バリアント’: JSON.stringify(item.variants),
-‘売却履歴’:  JSON.stringify(item.soldEvents)
-}).then(function() { hideLoading(); render(); })
-.catch(function(e) { hideLoading(); showError(’失敗: ’ + e.message); loadItems(); });
+  var item = items.find(function(i) { return i.id === id; });
+  if (!item || !item.soldEvents || item.soldEvents.length === 0) return;
+  var last = item.soldEvents.pop();
+  var v = (item.variants||[]).find(function(v) {
+    return v.size===last.size && v.color===last.color && (v.store||'')===(last.store||'');
+  });
+  if (v) { v.stock += 1; v.sold = Math.max(0,(v.sold||1)-1); }
+  showLoading('更新中...');
+  updateRecord(item.id, {
+    'バリアント': JSON.stringify(item.variants),
+    '売却履歴':  JSON.stringify(item.soldEvents)
+  }).then(function() { hideLoading(); render(); })
+    .catch(function(e) { hideLoading(); showError('失敗: ' + e.message); loadItems(); });
 }
 
 function deleteItem(id) {
-if (!confirm(‘この商品を削除しますか？’)) return;
-showLoading(‘削除中…’);
-deleteRecord(id).then(function() {
-items = items.filter(function(i) { return i.id !== id; });
-hideLoading(); render();
-}).catch(function(e) { hideLoading(); showError(’削除失敗: ’ + e.message); });
+  if (!confirm('この商品を削除しますか？')) return;
+  showLoading('削除中...');
+  deleteRecord(id).then(function() {
+    items = items.filter(function(i) { return i.id !== id; });
+    hideLoading(); render();
+  }).catch(function(e) { hideLoading(); showError('削除失敗: ' + e.message); });
 }
 
 // ═══════════════════════════════════════════
 // ANALYTICS
 // ═══════════════════════════════════════════
 function renderAnalytics() {
-var tIn=0, tStock=0, tSold=0, tRev=0;
-items.forEach(function(item) {
-(item.variants||[]).forEach(function(v) {
-tIn+=v.stock+(v.sold||0); tStock+=v.stock; tSold+=(v.sold||0);
-});
-tRev += totalVariantSold(item) * (item.price||0);
-});
-document.getElementById(‘a-total-in’).textContent    = tIn;
-document.getElementById(‘a-total-stock’).textContent = tStock;
-document.getElementById(‘a-total-sold’).textContent  = tSold;
-document.getElementById(‘a-revenue’).textContent     = ‘¥’+tRev.toLocaleString();
-document.getElementById(‘tab-analytics-count’).textContent = stores.length + ‘店’;
+  var tIn=0, tStock=0, tSold=0, tRev=0;
+  items.forEach(function(item) {
+    (item.variants||[]).forEach(function(v) {
+      tIn+=v.stock+(v.sold||0); tStock+=v.stock; tSold+=(v.sold||0);
+    });
+    tRev += totalVariantSold(item) * (item.price||0);
+  });
+  document.getElementById('a-total-in').textContent    = tIn;
+  document.getElementById('a-total-stock').textContent = tStock;
+  document.getElementById('a-total-sold').textContent  = tSold;
+  document.getElementById('a-revenue').textContent     = '¥'+tRev.toLocaleString();
+  document.getElementById('tab-analytics-count').textContent = stores.length + '店';
 
-var sd = stores.map(function(store) {
-var sIn=0,sStock=0,sSold=0,sRev=0;
-items.forEach(function(item) {
-(item.variants||[]).filter(function(v){return v.store===store;}).forEach(function(v){
-sIn+=v.stock+(v.sold||0); sStock+=v.stock; sSold+=(v.sold||0); sRev+=(v.sold||0)*(item.price||0);
-});
-});
-return {store:store,sIn:sIn,sStock:sStock,sSold:sSold,sRev:sRev};
-});
+  var sd = stores.map(function(store) {
+    var sIn=0,sStock=0,sSold=0,sRev=0;
+    items.forEach(function(item) {
+      (item.variants||[]).filter(function(v){return v.store===store;}).forEach(function(v){
+        sIn+=v.stock+(v.sold||0); sStock+=v.stock; sSold+=(v.sold||0); sRev+=(v.sold||0)*(item.price||0);
+      });
+    });
+    return {store:store,sIn:sIn,sStock:sStock,sSold:sSold,sRev:sRev};
+  });
 
-document.getElementById(‘store-table-body’).innerHTML = sd.length === 0
-? ‘<tr><td colspan="5" style="color:var(--text3);font-size:0.68rem;padding:16px 10px;">店舗が登録されていません</td></tr>’
-: sd.map(function(d) {
-return ‘<tr><td class="td-store">’+d.store+’</td><td class="td-num td-in">’+d.sIn+’</td><td class="td-num td-stock">’+d.sStock+’</td><td class="td-num td-sold">’+d.sSold+’</td><td class="td-num" style="color:var(--gold2);">¥’+d.sRev.toLocaleString()+’</td></tr>’;
-}).join(’’);
+  document.getElementById('store-table-body').innerHTML = sd.length === 0
+    ? '<tr><td colspan="5" style="color:var(--text3);font-size:0.68rem;padding:16px 10px;">店舗が登録されていません</td></tr>'
+    : sd.map(function(d) {
+        return '<tr><td class="td-store">'+d.store+'</td><td class="td-num td-in">'+d.sIn+'</td><td class="td-num td-stock">'+d.sStock+'</td><td class="td-num td-sold">'+d.sSold+'</td><td class="td-num" style="color:var(--gold2);">¥'+d.sRev.toLocaleString()+'</td></tr>';
+      }).join('');
 
-var mx = Math.max(1, Math.max.apply(null, sd.map(function(d){return Math.max(d.sStock,d.sSold);})));
-document.getElementById(‘store-bar-chart’).innerHTML = sd.map(function(d) {
-return ‘<div><div class="bar-row"><span class="bar-label">’+d.store+’</span>’+
-‘<div style="flex:1;display:flex;flex-direction:column;gap:3px;">’+
-‘<div class="bar-row" style="gap:6px;"><div class="bar-track"><div class="bar-fill in" style="width:'+(d.sStock/mx*100).toFixed(1)+'%;"></div></div><span class="bar-count" style="color:var(--sage2);">’+d.sStock+’</span></div>’+
-‘<div class="bar-row" style="gap:6px;"><div class="bar-track"><div class="bar-fill sold-bar" style="width:'+(d.sSold/mx*100).toFixed(1)+'%;"></div></div><span class="bar-count" style="color:var(--rust2);">’+d.sSold+’</span></div>’+
-‘</div></div></div>’;
-}).join(’’) + ‘<div style="display:flex;gap:16px;margin-top:8px;font-size:0.58rem;color:var(--text3);"><span style="display:flex;align-items:center;gap:5px;"><span style="width:12px;height:8px;background:var(--sage);display:inline-block;"></span>在庫</span><span style="display:flex;align-items:center;gap:5px;"><span style="width:12px;height:8px;background:var(--rust);display:inline-block;"></span>販売</span></div>’;
+  var mx = Math.max(1, Math.max.apply(null, sd.map(function(d){return Math.max(d.sStock,d.sSold);})));
+  document.getElementById('store-bar-chart').innerHTML = sd.map(function(d) {
+    return '<div><div class="bar-row"><span class="bar-label">'+d.store+'</span>'+
+      '<div style="flex:1;display:flex;flex-direction:column;gap:3px;">'+
+      '<div class="bar-row" style="gap:6px;"><div class="bar-track"><div class="bar-fill in" style="width:'+(d.sStock/mx*100).toFixed(1)+'%;"></div></div><span class="bar-count" style="color:var(--sage2);">'+d.sStock+'</span></div>'+
+      '<div class="bar-row" style="gap:6px;"><div class="bar-track"><div class="bar-fill sold-bar" style="width:'+(d.sSold/mx*100).toFixed(1)+'%;"></div></div><span class="bar-count" style="color:var(--rust2);">'+d.sSold+'</span></div>'+
+      '</div></div></div>';
+  }).join('') + '<div style="display:flex;gap:16px;margin-top:8px;font-size:0.58rem;color:var(--text3);"><span style="display:flex;align-items:center;gap:5px;"><span style="width:12px;height:8px;background:var(--sage);display:inline-block;"></span>在庫</span><span style="display:flex;align-items:center;gap:5px;"><span style="width:12px;height:8px;background:var(--rust);display:inline-block;"></span>販売</span></div>';
 
-var sm={}, cm={};
-items.forEach(function(item) {
-(item.variants||[]).forEach(function(v) {
-if(!sm[v.size]) sm[v.size]={stock:0,sold:0};
-if(!cm[v.color]) cm[v.color]={stock:0,sold:0};
-sm[v.size].stock+=v.stock; sm[v.size].sold+=(v.sold||0);
-cm[v.color].stock+=v.stock; cm[v.color].sold+=(v.sold||0);
-});
-});
-document.getElementById(‘size-table-body’).innerHTML =
-Object.keys(sm).sort(function(a,b){return SIZES.indexOf(a)-SIZES.indexOf(b);}).map(function(s){
-return ‘<tr><td>’+s+’</td><td class="td-num td-stock">’+sm[s].stock+’</td><td class="td-num td-sold">’+sm[s].sold+’</td></tr>’;
-}).join(’’) || ‘<tr><td colspan="3" style="color:var(--text3);font-size:0.68rem;">データなし</td></tr>’;
+  var sm={}, cm={};
+  items.forEach(function(item) {
+    (item.variants||[]).forEach(function(v) {
+      if(!sm[v.size]) sm[v.size]={stock:0,sold:0};
+      if(!cm[v.color]) cm[v.color]={stock:0,sold:0};
+      sm[v.size].stock+=v.stock; sm[v.size].sold+=(v.sold||0);
+      cm[v.color].stock+=v.stock; cm[v.color].sold+=(v.sold||0);
+    });
+  });
+  document.getElementById('size-table-body').innerHTML =
+    Object.keys(sm).sort(function(a,b){return SIZES.indexOf(a)-SIZES.indexOf(b);}).map(function(s){
+      return '<tr><td>'+s+'</td><td class="td-num td-stock">'+sm[s].stock+'</td><td class="td-num td-sold">'+sm[s].sold+'</td></tr>';
+    }).join('') || '<tr><td colspan="3" style="color:var(--text3);font-size:0.68rem;">データなし</td></tr>';
 
-document.getElementById(‘color-table-body’).innerHTML =
-Object.keys(cm).sort(function(a,b){return(cm[b].stock+cm[b].sold)-(cm[a].stock+cm[a].sold);}).map(function(c){
-return ‘<tr><td style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;border-radius:50%;background:'+colorToHex(c)+';border:1px solid var(--border2);display:inline-block;flex-shrink:0;"></span>’+c+’</td><td class="td-num td-stock">’+cm[c].stock+’</td><td class="td-num td-sold">’+cm[c].sold+’</td></tr>’;
-}).join(’’) || ‘<tr><td colspan="3" style="color:var(--text3);font-size:0.68rem;">データなし</td></tr>’;
+  document.getElementById('color-table-body').innerHTML =
+    Object.keys(cm).sort(function(a,b){return(cm[b].stock+cm[b].sold)-(cm[a].stock+cm[a].sold);}).map(function(c){
+      return '<tr><td style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;border-radius:50%;background:'+colorToHex(c)+';border:1px solid var(--border2);display:inline-block;flex-shrink:0;"></span>'+c+'</td><td class="td-num td-stock">'+cm[c].stock+'</td><td class="td-num td-sold">'+cm[c].sold+'</td></tr>';
+    }).join('') || '<tr><td colspan="3" style="color:var(--text3);font-size:0.68rem;">データなし</td></tr>';
 }
 
 // ═══════════════════════════════════════════
 // INIT
 // ═══════════════════════════════════════════
 // Airtableのフィールドが存在しない場合、初回のみ自動でフィールドを作成するためのガイド
-showLoading(‘Airtableに接続中…’);
+showLoading('Airtableに接続中...');
 loadItems();
 </script>
-
 </body>
 </html>
